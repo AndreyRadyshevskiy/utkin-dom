@@ -1,0 +1,176 @@
+.navbar 
+  background-color: #fff9f6
+  border-top: 2px solid #e2b797
+  border-bottom: 2px solid #e2b797
+
+  &__inner 
+    display: flex
+    height: 6rem
+    align-items: center
+    justify-content: space-between
+    position: relative
+  
+.main-menu 
+
+  &__list
+    display: flex
+    list-style: none
+    flex-wrap: wrap
+
+  &__item 
+    margin-right: 7rem
+  
+  &__link:link,
+  &__link:visited 
+    font-family: 'PTSerif', sans-serif
+    font-size: 2rem
+    text-transform: uppercase
+    color: #454545
+    transition: color .25s
+    letter-spacing: .6px
+  
+  &__link:hover,
+  &__link:active 
+    color: #b87e4b
+
+.sub-menu
+  display: flex
+  flex-direction: column
+  position: absolute
+  top: 6.2rem
+  list-style: none
+  padding: 2rem 
+  background-color: #fff
+  border: 2px solid #e2b797
+  border-top: none
+  display: none
+  
+  &__item:not(:last-of-type)
+    margin-bottom: 1rem
+
+  &__link
+    font-family: 'PTSans', sans-serif
+    font-size: 1.6rem
+    font-weight: bold
+    color: #454545
+    text-transform: uppercase
+    display: inline-block 
+
+.search
+  margin-right: auto
+
+  &__button
+    cursor: pointer
+    padding: 1rem 1rem 1rem 0.7rem
+    position: relative
+  
+    &:hover .search__icon
+      fill: #b87e4b
+
+  &__icon 
+    width: 2rem
+    height: 2rem
+    fill: #454545
+    transform: scale(-1,1)
+    transition: fill .25s
+
+    &--white
+      width: 2.5rem
+      height: 2.5rem
+      fill: #fff
+  
+  &__field
+    position: absolute
+    top: 6rem
+    left: 0
+    border: 2px solid #e2b797
+    width: 100%
+    display: none
+  
+  &__inner
+    display: flex
+    width: 100%
+
+  &__form
+    flex: 1
+
+  &__input
+    width: 100%
+    height: 6rem
+    border: none
+    border-right: 2px solid #e2b797
+    outline: none
+    padding-left: 2rem
+    font-size: 1.8rem
+    color: #454545
+
+  &__menu
+    width: 21rem
+    position: relative
+
+  &__sub-menu
+    top: 6rem
+    left: -2px
+    width: 21.4rem
+
+  &__options:link,
+  &__options:visited
+    font-family: 'PTsans', sans-serif
+    font-size: 1.6rem
+    font-weight: bold
+    text-transform: uppercase
+    color: #454545
+    line-height: 6rem
+    margin-right: 1rem
+    padding-left: 2rem
+    display: inline-block
+    width: 100%
+    background-color: #fff
+
+  &__arrow
+    width: 0
+    height: 0
+    border-top: 7px solid #b87e4b
+    border-right: 7px solid transparent
+    border-left: 7px solid transparent
+    position: absolute
+    top: 2.75rem
+    left: 11rem
+
+  &__submit
+    width: 6rem
+    height: 6rem
+    border: none
+    background-color: #f29ea4
+    outline: none
+    cursor: pointer
+
+
+.login
+  display: flex
+  font-family: 'PTSerif', sans-serif
+  font-size: 2rem
+
+  &__avatar
+    background-color: #b87e4b
+    width: 3rem
+    height: 3rem
+    position: relative
+    border-radius: 50%
+    margin-right: 2rem
+
+  &__name
+    position: absolute
+    color: #fff
+    left: 9px
+    top: 2px
+  
+
+    
+        
+        
+      
+    
+  
+
+

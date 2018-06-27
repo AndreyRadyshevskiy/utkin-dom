@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Уткин Дом</title>
+</head>
+
+<body>
+
+  <header class="header-logo"></header>
+
+  <div class="navbar">
+    <div class="container">
+      <div class="navbar__inner">
+        <nav class="main-menu">
+          <ul class="main-menu__list" role="navigation">
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Темы</a>
+
+              <ul class="main-menu__sub-menu sub-menu">
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Дети</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Беременность</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Семейные ценности</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Отношения</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Личностный рост</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Бизнес</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Праздники</a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">События</a>
+
+              <ul class="main-menu__sub-menu sub-menu">
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Ближайшие</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Прошедшие</a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Эксперты</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">О Проекте</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Форум</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="search">
+          <div class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+          </div>
+
+          <div class="search__field">
+            <div class="search__inner">
+
+              <form action="/search.html" id="cse-search-box" class="search__form">
+                <input type="hidden" name="cx" value="partner-pub-xxx:xxx">
+                <input type="hidden" name="cof" value="FORID:10">
+                <input type="hidden" name="ie" value="UTF-8">
+                <input type="text" name="q" placeholder="Я ищу..." class="search__input">
+              </form>
+
+              <nav class="search__menu">
+                <a href="#" class="search__options">По темам</a>
+                <span class="search__arrow"></span>
+                <ul class="search__sub-menu sub-menu">
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Дети</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Беременность</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Семейные ценности</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Отношения</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Личностный рост</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Бизнес</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Праздники</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <button type="submit" form="cse-search-box" class="search__submit">
+                <svg class="search__icon search__icon--white">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="login">
+          <div class="login__avatar">
+            <span class="login__name">K</span>
+          </div>
+          <span class="login__status">Вы дома</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <div class="about-site">
+
+      <section class="author">
+        <div class="author__img-wrapper">
+          <img src="../img/katya.png" alt="Фото Кати" class="author__img">
+        </div>
+        <div class="author__about-me">
+          <div class="author__title-wrapper">
+            <span class="author__title">Здравствуйте!</span>
+            <svg class="author__icon">
+              <use xlink:href="img/sprite.svg#icon-wink"></use>
+            </svg>
+          </div>
+          <p class="author__paragraph paragraph italic">Меня зовут Катя Кещян.
+            <br> Кто со мной знаком, знает, что я — активный пропагандист семейных ценностей. А, если вы меня видите впервые,
+            то приятно познакомиться. Человек живет по системе ...</p>
+        </div>
+        <a href="#" class="learn-more">Читать полностью »</a>
+      </section>
+
+      <section class="about">
+        <h2 class="about__title heading-secondary">Здесь живут здоровые
+          <br> семейные ценности ...</h2>
+        <h3 class="about__features-title heading-tertiary">В «Уткином Доме» Вы найдете:</h3>
+        <ul class="about__features">
+          <li class="about__feature paragraph">Интересные и полезные статьи от профессионалов в своем деле из психологии, педагогики, истории, репродуктологии,
+            коучинга и другие</li>
+          <li class="about__feature paragraph">Собеседники – единомышленники</li>
+          <li class="about__feature paragraph">Форум, где можно задать вопрос, высказать свою точку зрения или поделиться своим опытом</li>
+          <li class="about__feature paragraph">Возможность задавать вопросы специалистам или прокомментировать статью</li>
+          <li class="about__feature paragraph">Возможность получить личную консультацию по интересующей теме</li>
+          <li class="about__feature paragraph">Несколько раз в месяц он-лайн и офф-лайн мероприятия различного характера</li>
+        </ul>
+        <a href="#" class="learn-more">Больше о проекте »</a>
+      </section>
+
+    </div>
+
+    <div class="articles-aside">
+
+      <section class="articles">
+
+        <div class="articles__heading">
+          <div class="articles__title-wrapper">
+            <h2 class="articles__title heading-secondary">
+              <div class="underline-thick">
+                <span></span>
+              </div>
+              Последние статьи</h2>
+          </div>
+          <div class="articles__filter">
+            <span class="articles__filter-link articles__filter-link--checked">Последние</span>
+            <span class="articles__filter-link">Популярные</span>
+          </div>
+        </div>
+
+        <div class="articles__inner masonry-grid">
+
+            <div class="article grid-item">
+              <img src="../img/article1.jpg" alt="фото1" class="article__img">
+              <a href="#" class="article__tag">Дети</a>
+              <a href="#" class="article__hash-tag">#обучение</a>
+              <a href="#" class="article__hash-tag">#игра</a>
+              <h3 class="article__title heading-tertiary">Учить – играя, или играть — обучая?</h3>
+              <p class="article__paragraph paragraph">
+                Вопрос, который часто задают родители маленьких детей. Оказывается, учить детей можно легко, просто и интересно, просто с
+                ними играя.
+              </p>
+              <a href="#" class="article__author italic">Светлана Антонова</a>
+              <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
+              <time datetime="2017-12-23" class="article__time italic">23 декабря 2017</time>
+            </div>
+
+            <div class="article grid-item">
+              <img src="../img/article2.jpg" alt="фото2" class="article__img">
+              <a href="#" class="article__tag">Семейные традиции</a>
+              <a href="#" class="article__hash-tag">#Мудрость</a>
+              <a href="#" class="article__hash-tag">#Семейные_ценности</a>
+              <h3 class="article__title heading-tertiary">Почему предки знают ответы на все наши вопросы?</h3>
+              <p class="article__paragraph paragraph">
+                  В семье каждого из нас наступает такой момент, когда мы не знаем, как правильно поступить в той или иной ситуации. Нам часто кажется ...
+              </p>
+              <a href="#" class="article__author italic">Михаил Иванов</a>
+              <p class="article__about-author paragraph italic">Педагог, психолог</p>
+              <time datetime="2017-12-21" class="article__time italic">21 декабря 2017</time>
+            </div>
+
+            <div class="article grid-item">
+              <img src="../img/article3.jpg" alt="фото3" class="article__img">
+              <a href="#" class="article__tag">Дети</a>
+              <a href="#" class="article__hash-tag">#трудолюбие</a>
+              <a href="#" class="article__hash-tag">#воспитание</a>
+              <h3 class="article__title heading-tertiary">Как формируется трудолюбие у детей</h3>
+              <p class="article__paragraph paragraph">
+                  Люблю наблюдать за играми детей.  Игра говорит обо всем, что для ребенка сейчас важно. Взрослый может присоединиться  к игре и ...
+              </p>
+              <a href="#" class="article__author italic">Елена Будаева</a>
+              <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
+              <time datetime="2017-12-19" class="article__time italic">19 декабря 2017</time>
+            </div>
+
+            <div class="article grid-item">
+              <img src="../img/article4.jpg" alt="фото4" class="article__img">
+              <a href="#" class="article__tag">Бизнес</a>
+              <a href="#" class="article__hash-tag">#мама_в_декрете</a>
+              <h3 class="article__title heading-tertiary">Как стать успешной не выходя из декрета?</h3>
+              <p class="article__paragraph paragraph">
+                  Вопрос, который часто задают родители маленьких детей.
+                  Оказывается, учить детей можно легко, просто и интересно, просто с ними играя. 
+              </p>
+              <a href="#" class="article__author italic">Светлана Антонова</a>
+              <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
+              <time datetime="2017-12-18" class="article__time italic">18 декабря 2017</time>
+            </div>
+
+            <div class="article grid-item">
+              <img src="../img/article5.jpg" alt="фото5" class="article__img">
+              <a href="#" class="article__tag">Праздники</a>
+              <a href="#" class="article__hash-tag">#день_рождения</a>
+              <h3 class="article__title heading-tertiary">Детский день рождения. Довериться профессионалу или своими силами?</h3>
+              <p class="article__paragraph paragraph">
+                  Дети любят сказки. Слушать, сочинять, рассказывать.  Сказка  несет информацию о том, что спрятано «за семью замками и семью печатями», 
+                  в самой глубине души.
+              </p>
+              <a href="#" class="article__author italic">Катя Кещян</a>
+              <p class="article__about-author paragraph italic">Профессионал, организатор</p>
+              <time datetime="2017-12-15" class="article__time italic">15 декабря 2017</time>
+            </div>
+
+            <div class="article grid-item">
+              <img src="../img/article6.jpg" alt="фото6" class="article__img">
+              <a href="#" class="article__tag">Беременность</a>
+              <a href="#" class="article__hash-tag">#6месяцев</a>
+              <h3 class="article__title heading-tertiary">В ожидании чуда. Правильный настрой</h3>
+              <p class="article__paragraph paragraph">
+                Люблю наблюдать за играми детей.  Игра говорит обо всем, что для ребенка сейчас важно. Взрослый может присоединиться  к игре и направлять ее в развивающем русле.
+              </p>
+              <a href="#" class="article__author italic">Светлана Антонова</a>
+              <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
+              <time datetime="2017-12-14" class="article__time italic">14 декабря 2017</time>
+            </div>
+
+            <div class="article grid-item">
+              <img src="../img/article7.jpg" alt="фото7" class="article__img">
+              <a href="#" class="article__tag">Отношения</a>
+              <a href="#" class="article__hash-tag">#мужчина_и_женщина</a>
+              <h3 class="article__title heading-tertiary">Мужской и женский взгляд на одни и те же события.</h3>
+              <p class="article__paragraph paragraph">
+                Вопрос, который часто задают родители маленьких детей.
+                Оказывается, учить детей можно легко, просто и интересно, просто с ними играя. 
+              </p>
+              <a href="#" class="article__author italic">Игорь Алексеев</a>
+              <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
+              <time datetime="2017-12-12" class="article__time italic">12 декабря 2017</time>
+            </div>
+
+            <div class="article grid-item">
+                <img src="../img/article3.jpg" alt="фото3" class="article__img">
+                <a href="#" class="article__tag">Дети</a>
+                <a href="#" class="article__hash-tag">#трудолюбие</a>
+                <a href="#" class="article__hash-tag">#воспитание</a>
+                <h3 class="article__title heading-tertiary">Как формируется трудолюбие у детей</h3>
+                <p class="article__paragraph paragraph">
+                    Люблю наблюдать за играми детей.  Игра говорит обо всем, что для ребенка сейчас важно. Взрослый может присоединиться  к игре и ...
+                </p>
+                <a href="#" class="article__author italic">Елена Будаева</a>
+                <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
+                <time datetime="2017-12-19" class="article__time italic">19 декабря 2017</time>
+            </div>
+
+            <div class="article grid-item">
+              <img src="../img/article8.jpg" alt="фото8" class="article__img">
+              <a href="#" class="article__tag">Личностное развитие</a>
+              <a href="#" class="article__hash-tag">#лекгоменяться</a>
+              <a href="#" class="article__hash-tag">#достижениецелей</a>
+              <h3 class="article__title heading-tertiary">Структура развития личности</h3>
+              <p class="article__paragraph paragraph">
+                  Разберём одну из теорий устройства личности про развития. Когда ребёнок рождается, он оказывается в неком окружении. Это люди, вещи, звуки, атмосфера. Первый уровень, который Роберт Дилтс так и назвал- ОКРУЖЕНИЕ.
+              </p>
+              <a href="#" class="article__author italic">Светлана Антонова</a>
+              <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
+              <time datetime="2017-12-10" class="article__time italic">10 декабря 2017</time>
+            </div>
+
+            <div class="article grid-item">
+                <img src="../img/article1.jpg" alt="фото1" class="article__img">
+                <a href="#" class="article__tag">Дети</a>
+                <a href="#" class="article__hash-tag">#обучение</a>
+                <a href="#" class="article__hash-tag">#игра</a>
+                <h3 class="article__title heading-tertiary">Учить – играя, или играть — обучая?</h3>
+                <p class="article__paragraph paragraph">
+                  Вопрос, который часто задают родители маленьких детей. Оказывается, учить детей можно легко, просто и интересно, просто с
+                  ними играя.
+                </p>
+                <a href="#" class="article__author italic">Светлана Антонова</a>
+                <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
+                <time datetime="2017-12-23" class="article__time italic">23 декабря 2017</time>
+              </div>
+  
+            <div class="article grid-item">
+                <img src="../img/article2.jpg" alt="фото2" class="article__img">
+                <a href="#" class="article__tag">Семейные традиции</a>
+                <a href="#" class="article__hash-tag">#Мудрость</a>
+                <a href="#" class="article__hash-tag">#Семейные_ценности</a>
+                <h3 class="article__title heading-tertiary">Почему предки знают ответы на все наши вопросы?</h3>
+                <p class="article__paragraph paragraph">
+                    В семье каждого из нас наступает такой момент, когда мы не знаем, как правильно поступить в той или иной ситуации. Нам часто кажется ...
+                </p>
+                <a href="#" class="article__author italic">Михаил Иванов</a>
+                <p class="article__about-author paragraph italic">Педагог, психолог</p>
+                <time datetime="2017-12-21" class="article__time italic">21 декабря 2017</time>
+            </div>
+  
+            <div class="article grid-item">
+                <img src="../img/article3.jpg" alt="фото3" class="article__img">
+                <a href="#" class="article__tag">Дети</a>
+                <a href="#" class="article__hash-tag">#трудолюбие</a>
+                <a href="#" class="article__hash-tag">#воспитание</a>
+                <h3 class="article__title heading-tertiary">Как формируется трудолюбие у детей</h3>
+                <p class="article__paragraph paragraph">
+                    Люблю наблюдать за играми детей.  Игра говорит обо всем, что для ребенка сейчас важно. Взрослый может присоединиться  к игре и ...
+                </p>
+                <a href="#" class="article__author italic">Елена Будаева</a>
+                <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
+                <time datetime="2017-12-19" class="article__time italic">19 декабря 2017</time>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="aside">
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/masonry.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
