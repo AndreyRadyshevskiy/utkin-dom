@@ -38,11 +38,33 @@ $(function(){
 });
 
   // Masonry Grid
-  $('.masonry-grid').masonry({
+  const grid = $('.masonry-grid').isotope({
     // options
-    columnWidth: 270,
-    horizontalOrder: true,
-    gutter: 30
+    itemSelector: '.grid-item',
+    getSortData: {
+      date: function( itemElem ) {
+        const dateArr = $( itemElem ).find('time').attr('datetime').split('-');
+        const date = new Date(dateArr[2], parseInt(dateArr[1], 10) - 1, dateArr[0]);
+        return date.getTime();
+      }
+    },
+    masonry: {
+      columnWidth: 270,
+      gutter: 30,
+      horizontalOrder: true
+    }
   });
 
+  $('.articles__filter-link').on('click', function(){
+    grid.isotope({
+      sortBy: 'date',
+      sortAscending: false
+    });
+    console.log('clicked');
+  });
+
+  var dateArr = $('.grid-item').find('time').attr('datetime').split('-');
+  console.log(dateArr)
+  var date = new Date(dateArr[2], parseInt(dateArr[1], 10) - 1, dateArr[0]);
+  console.log(date.getTime());
 });
