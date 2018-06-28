@@ -35,14 +35,15 @@ $(function(){
       $('.search__sub-menu').slideUp(200);
       $('.search__arrow').css('transform', 'rotateZ(0)');
     }
-});
+  });
 
   // Masonry Grid
   const grid = $('.masonry-grid').isotope({
     // options
     itemSelector: '.grid-item',
     getSortData: {
-      date: function( itemElem ) {
+      popular: '[data-popularity-index]',
+      recent: function( itemElem ) {
         const dateArr = $( itemElem ).find('time').attr('datetime').split('-');
         const date = new Date(dateArr[2], parseInt(dateArr[1], 10) - 1, dateArr[0]);
         return date.getTime();
@@ -55,16 +56,12 @@ $(function(){
     }
   });
 
-  $('.articles__filter-link').on('click', function(){
+  $('.articles__filter').on('click', 'button', function(){
+    var filterValue = $(this).attr('data-filter');
     grid.isotope({
-      sortBy: 'date',
+      sortBy: filterValue,
       sortAscending: false
     });
-    console.log('clicked');
   });
 
-  var dateArr = $('.grid-item').find('time').attr('datetime').split('-');
-  console.log(dateArr)
-  var date = new Date(dateArr[2], parseInt(dateArr[1], 10) - 1, dateArr[0]);
-  console.log(date.getTime());
 });
