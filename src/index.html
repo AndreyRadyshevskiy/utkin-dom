@@ -192,14 +192,20 @@
               Последние статьи</h2>
           </div>
           <div class="articles__filter">
-            <button class="articles__filter-link" data-filter="recent">Последние</button>
-            <button class="articles__filter-link" data-filter="popular">Популярные</button>
+            <div class="articles__input-group">
+              <input type="checkbox" id="recent" class="articles__filter-checkbox" data-filter="recent">
+              <label for="recent">Последние</label>
+            </div>
+            <div class="articles__input-group">
+              <input type="checkbox" id="popular" class="articles__filter-checkbox" data-filter="popular">
+              <label for="popular">Популярные</label>
+            </div>
           </div>
         </div>
 
         <div class="articles__inner masonry-grid">
 
-            <article class="article grid-item">
+            <article class="article grid-item" data-id="1">
               <img src="../img/article1.jpg" alt="фото1" class="article__img">
               <a href="#" class="article__tag">Дети</a>
               <a href="#" class="article__hash-tag">#обучение</a>
@@ -214,7 +220,7 @@
               <time datetime="23-12-2017" class="article__time italic">23 декабря 2017</time>
             </article>
 
-            <article class="article grid-item">
+            <article class="article grid-item" data-id="2">
               <img src="../img/article2.jpg" alt="фото2" class="article__img">
               <a href="#" class="article__tag">Семейные традиции</a>
               <a href="#" class="article__hash-tag">#Мудрость</a>
@@ -228,7 +234,7 @@
               <time datetime="21-12-2017" class="article__time italic">21 декабря 2017</time>
             </article>
 
-            <article class="article grid-item">
+            <article class="article grid-item" data-id="3">
               <img src="../img/article3.jpg" alt="фото3" class="article__img">
               <a href="#" class="article__tag">Дети</a>
               <a href="#" class="article__hash-tag">#трудолюбие</a>
@@ -242,7 +248,7 @@
               <time datetime="19-12-2017" class="article__time italic">19 декабря 2017</time>
             </article>
 
-            <article class="article grid-item">
+            <article class="article grid-item" data-id="4">
               <img src="../img/article4.jpg" alt="фото4" class="article__img">
               <a href="#" class="article__tag">Бизнес</a>
               <a href="#" class="article__hash-tag">#мама_в_декрете</a>
@@ -256,7 +262,7 @@
               <time datetime="18-12-2017" class="article__time italic">18 декабря 2017</time>
             </article>
 
-            <article class="article grid-item" data-popularity-index="80">
+            <article class="article grid-item" data-id="5" data-popularity-index="80">
               <img src="../img/article5.jpg" alt="фото5" class="article__img">
               <a href="#" class="article__tag">Праздники</a>
               <a href="#" class="article__hash-tag">#день_рождения</a>
@@ -270,7 +276,7 @@
               <time datetime="15-12-2017" class="article__time italic">15 декабря 2017</time>
             </article>
 
-            <article class="article grid-item">
+            <article class="article grid-item" data-id="6">
               <img src="../img/article6.jpg" alt="фото6" class="article__img">
               <a href="#" class="article__tag">Беременность</a>
               <a href="#" class="article__hash-tag">#6месяцев</a>
@@ -283,7 +289,7 @@
               <time datetime="14-12-2017" class="article__time italic">14 декабря 2017</time>
             </article>
 
-            <article class="article grid-item">
+            <article class="article grid-item" data-id="7">
               <img src="../img/article7.jpg" alt="фото7" class="article__img">
               <a href="#" class="article__tag">Отношения</a>
               <a href="#" class="article__hash-tag">#мужчина_и_женщина</a>
@@ -297,7 +303,7 @@
               <time datetime="12-12-2017" class="article__time italic">12 декабря 2017</time>
             </article>
 
-            <article class="article grid-item" data-popularity-index="100">
+            <article class="article grid-item" data-popularity-index="100" data-id="8">
                 <img src="../img/article3.jpg" alt="фото3" class="article__img">
                 <a href="#" class="article__tag">Дети</a>
                 <a href="#" class="article__hash-tag">#трудолюбие</a>
@@ -311,7 +317,7 @@
                 <time datetime="11-12-2017" class="article__time italic">11 декабря 2017</time>
             </article>
 
-            <article class="article grid-item">
+            <article class="article grid-item" data-id="9">
               <img src="../img/article8.jpg" alt="фото8" class="article__img">
               <a href="#" class="article__tag">Личностное развитие</a>
               <a href="#" class="article__hash-tag">#лекгоменяться</a>
@@ -325,7 +331,7 @@
               <time datetime="10-12-2017" class="article__time italic">10 декабря 2017</time>
             </article>
 
-            <article class="article grid-item">
+            <article class="article grid-item" data-id="10">
                 <img src="../img/article1.jpg" alt="фото1" class="article__img">
                 <a href="#" class="article__tag">Дети</a>
                 <a href="#" class="article__hash-tag">#обучение</a>
@@ -340,7 +346,7 @@
                 <time datetime="23-12-2017" class="article__time italic">23 декабря 2017</time>
               </article>
   
-            <article class="article grid-item" data-popularity-index="90">
+            <article class="article grid-item" data-popularity-index="90" data-id="11">
                 <img src="../img/article2.jpg" alt="фото2" class="article__img">
                 <a href="#" class="article__tag">Семейные традиции</a>
                 <a href="#" class="article__hash-tag">#Мудрость</a>
@@ -354,7 +360,7 @@
                 <time datetime="21-12-2017" class="article__time italic">21 декабря 2017</time>
             </article>
   
-            <article class="article grid-item">
+            <article class="article grid-item" data-id="12">
                 <img src="../img/article3.jpg" alt="фото3" class="article__img">
                 <a href="#" class="article__tag">Дети</a>
                 <a href="#" class="article__hash-tag">#трудолюбие</a>

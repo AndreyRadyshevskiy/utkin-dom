@@ -3,7 +3,8 @@ $(function(){
   $('.main-menu').on('click', function(e){
     
     $(e.target).next('.sub-menu').stop().slideToggle(200);
-  
+    
+    e.preventDefault();
   });
 
   $('.search__button').click(function(e){
@@ -43,6 +44,7 @@ $(function(){
     itemSelector: '.grid-item',
     getSortData: {
       popular: '[data-popularity-index]',
+      id: '[data-id] parseInt',
       recent: function( itemElem ) {
         const dateArr = $( itemElem ).find('time').attr('datetime').split('-');
         const date = new Date(dateArr[2], parseInt(dateArr[1], 10) - 1, dateArr[0]);
@@ -56,12 +58,19 @@ $(function(){
     }
   });
 
-  $('.articles__filter').on('click', 'button', function(){
+  $('.articles__filter').on('change', 'input', function(){
     var filterValue = $(this).attr('data-filter');
-    grid.isotope({
-      sortBy: filterValue,
-      sortAscending: false
-    });
+    if(this.checked) {
+      grid.isotope({
+        sortBy: filterValue,
+        sortAscending: false
+      });
+    } else {
+      grid.isotope({
+        sortBy: 'id',
+        sortAscending: true,
+      });
+    }
   });
 
 });
