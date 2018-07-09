@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
@@ -13,87 +13,20 @@
 
 <body>
 
-  <header class="header-logo"></header>
+  <header class="header-logo">
+  </header>
 
-  <div class="navbar">
-    <div class="container">
-      <div class="navbar__inner">
-        <nav class="main-menu">
-          <ul class="main-menu__list" role="navigation">
-            <li class="main-menu__item">
-              <a href="#" class="main-menu__link">Темы</a>
+  <div class="site-after-header">
 
-              <ul class="main-menu__sub-menu sub-menu">
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Дети</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Беременность</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Семейные ценности</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Отношения</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Личностный рост</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Бизнес</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Праздники</a>
-                </li>
-              </ul>
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar__inner">
+          <nav class="main-menu">
+            <ul class="main-menu__list" role="navigation">
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Темы</a>
 
-            </li>
-            <li class="main-menu__item">
-              <a href="#" class="main-menu__link">События</a>
-
-              <ul class="main-menu__sub-menu sub-menu">
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Ближайшие</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Прошедшие</a>
-                </li>
-              </ul>
-
-            </li>
-            <li class="main-menu__item">
-              <a href="#" class="main-menu__link">Эксперты</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="#" class="main-menu__link">О Проекте</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="#" class="main-menu__link">Форум</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="search">
-          <div class="search__button">
-            <svg class="search__icon">
-              <use xlink:href="img/sprite.svg#icon-search"></use>
-            </svg>
-          </div>
-
-          <div class="search__field">
-            <div class="search__inner">
-
-              <form action="/search.html" id="cse-search-box" class="search__form">
-                <input type="hidden" name="cx" value="partner-pub-xxx:xxx">
-                <input type="hidden" name="cof" value="FORID:10">
-                <input type="hidden" name="ie" value="UTF-8">
-                <input type="text" name="q" placeholder="Я ищу..." class="search__input">
-              </form>
-
-              <nav class="search__menu">
-                <a href="#" class="search__options">По темам</a>
-                <span class="search__arrow"></span>
-                <ul class="search__sub-menu sub-menu">
+                <ul class="main-menu__sub-menu sub-menu">
                   <li class="sub-menu__item">
                     <a href="#" class="sub-menu__link">Дети</a>
                   </li>
@@ -116,98 +49,168 @@
                     <a href="#" class="sub-menu__link">Праздники</a>
                   </li>
                 </ul>
-              </nav>
 
-              <button type="submit" form="cse-search-box" class="search__submit">
-                <svg class="search__icon search__icon--white">
-                  <use xlink:href="img/sprite.svg#icon-search"></use>
-                </svg>
-              </button>
+              </li>
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">События</a>
 
+                <ul class="main-menu__sub-menu sub-menu">
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Ближайшие</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Прошедшие</a>
+                  </li>
+                </ul>
+
+              </li>
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Эксперты</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">О Проекте</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Форум</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="search">
+            <div class="search__button">
+              <svg class="search__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </div>
+
+            <div class="search__field">
+              <div class="search__inner">
+
+                <form action="/search.html" id="cse-search-box" class="search__form">
+                  <input type="hidden" name="cx" value="partner-pub-xxx:xxx">
+                  <input type="hidden" name="cof" value="FORID:10">
+                  <input type="hidden" name="ie" value="UTF-8">
+                  <input type="text" name="q" placeholder="Я ищу..." class="search__input">
+                </form>
+
+                <nav class="search__menu">
+                  <a href="#" class="search__options">По темам</a>
+                  <span class="search__arrow"></span>
+                  <ul class="search__sub-menu sub-menu">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Дети</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Беременность</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Семейные ценности</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Отношения</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Личностный рост</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Бизнес</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Праздники</a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <button type="submit" form="cse-search-box" class="search__submit">
+                  <svg class="search__icon search__icon--white">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="login">
-          <div class="login__avatar">
-            <span class="login__name">K</span>
+          <div class="login">
+            <div class="login__avatar">
+              <span class="login__name">K</span>
+            </div>
+            <span class="login__status">Вы дома</span>
           </div>
-          <span class="login__status">Вы дома</span>
-        </div>
 
+        </div>
       </div>
     </div>
-  </div>
 
-  <main class="container">
+    <main class="container">
 
-    <div class="about-site">
+      <div class="about-site">
 
-      <section class="author">
-        <div class="author__img-wrapper">
-          <img src="../img/katya.png" alt="Фото Кати" class="author__img">
-        </div>
-        <div class="author__about-me">
-          <div class="author__title-wrapper">
-            <span class="author__title">Здравствуйте!</span>
-            <svg class="author__icon">
-              <use xlink:href="img/sprite.svg#icon-wink"></use>
-            </svg>
+        <section class="author">
+          <div class="author__img-wrapper">
+            <img src="../img/katya.png" alt="Фото Кати" class="author__img">
           </div>
-          <p class="author__paragraph paragraph italic">Меня зовут Катя Кещян.
-            <br> Кто со мной знаком, знает, что я — активный пропагандист семейных ценностей. А, если вы меня видите впервые,
-            то приятно познакомиться. Человек живет по системе ...</p>
-        </div>
-        <a href="#" class="learn-more">Читать полностью »</a>
-      </section>
+          <div class="author__about-me">
+            <div class="author__title-wrapper">
+              <span class="author__title">Здравствуйте!</span>
+              <svg class="author__icon">
+                <use xlink:href="img/sprite.svg#icon-wink"></use>
+              </svg>
+            </div>
+            <p class="author__paragraph paragraph italic">Меня зовут Катя Кещян.
+              <br> Кто со мной знаком, знает, что я — активный пропагандист семейных ценностей. А, если вы меня видите впервые,
+              то приятно познакомиться. Человек живет по системе ...</p>
+          </div>
+          <a href="#" class="learn-more">Читать полностью »</a>
+        </section>
 
-      <section class="about">
-        <h2 class="about__title heading-secondary">Здесь живут здоровые
-          <br> семейные ценности ...</h2>
-        <h3 class="about__features-title heading-tertiary">В «Уткином Доме» Вы найдете:</h3>
-        <ul class="about__features">
-          <li class="about__feature paragraph">Интересные и полезные статьи от профессионалов в своем деле из психологии, педагогики, истории, репродуктологии,
-            коучинга и другие</li>
-          <li class="about__feature paragraph">Собеседники – единомышленники</li>
-          <li class="about__feature paragraph">Форум, где можно задать вопрос, высказать свою точку зрения или поделиться своим опытом</li>
-          <li class="about__feature paragraph">Возможность задавать вопросы специалистам или прокомментировать статью</li>
-          <li class="about__feature paragraph">Возможность получить личную консультацию по интересующей теме</li>
-          <li class="about__feature paragraph">Несколько раз в месяц он-лайн и офф-лайн мероприятия различного характера</li>
-        </ul>
-        <a href="#" class="learn-more">Больше о проекте »</a>
-      </section>
+        <section class="about">
+          <h2 class="about__title heading-secondary">Здесь живут здоровые
+            <br> семейные ценности ...</h2>
+          <h3 class="about__features-title heading-tertiary">В «Уткином Доме» Вы найдете:</h3>
+          <ul class="about__features">
+            <li class="about__feature paragraph">Интересные и полезные статьи от профессионалов в своем деле из психологии, педагогики, истории, репродуктологии,
+              коучинга и другие</li>
+            <li class="about__feature paragraph">Собеседники – единомышленники</li>
+            <li class="about__feature paragraph">Форум, где можно задать вопрос, высказать свою точку зрения или поделиться своим опытом</li>
+            <li class="about__feature paragraph">Возможность задавать вопросы специалистам или прокомментировать статью</li>
+            <li class="about__feature paragraph">Возможность получить личную консультацию по интересующей теме</li>
+            <li class="about__feature paragraph">Несколько раз в месяц он-лайн и офф-лайн мероприятия различного характера</li>
+          </ul>
+          <a href="#" class="learn-more">Больше о проекте »</a>
+        </section>
 
-    </div>
+      </div>
 
-    <div class="articles-aside">
+      <div class="articles-aside">
 
-      <section class="articles">
+        <section class="articles">
 
-        <div class="articles__heading">
-          <div class="articles__title-wrapper">
-            <h2 class="articles__title heading-secondary">
-              <div class="underline-thick">
-                <span></span>
+          <div class="articles__heading">
+            <div class="articles__title-wrapper">
+              <h2 class="articles__title heading-secondary">
+                <div class="underline-thick">
+                  <span></span>
+                </div>
+                Последние статьи</h2>
+            </div>
+            <div class="articles__filter">
+              <div class="articles__checkbox-group">
+                <input type="checkbox" id="recent" class="articles__checkbox" data-filter="recent">
+                <label for="recent" class="articles__filter-button">Последние</label>
               </div>
-              Последние статьи</h2>
-          </div>
-          <div class="articles__filter">
-            <div class="articles__input-group">
-              <input type="checkbox" id="recent" class="articles__filter-checkbox" data-filter="recent">
-              <label for="recent">Последние</label>
-            </div>
-            <div class="articles__input-group">
-              <input type="checkbox" id="popular" class="articles__filter-checkbox" data-filter="popular">
-              <label for="popular">Популярные</label>
+              <div class="articles__checkbox-group">
+                <input type="checkbox" id="popular" class="articles__checkbox" data-filter="popular">
+                <label for="popular" class="articles__filter-button">Популярные</label>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="articles__inner masonry-grid">
+          <div class="articles__inner masonry-grid">
 
             <article class="article grid-item" data-id="1">
               <img src="../img/article1.jpg" alt="фото1" class="article__img">
-              <a href="#" class="article__tag">Дети</a>
+              <a href="#" class="article__tag tag">Дети</a>
               <a href="#" class="article__hash-tag">#обучение</a>
               <a href="#" class="article__hash-tag">#игра</a>
               <h3 class="article__title heading-tertiary">Учить – играя, или играть — обучая?</h3>
@@ -222,12 +225,13 @@
 
             <article class="article grid-item" data-id="2">
               <img src="../img/article2.jpg" alt="фото2" class="article__img">
-              <a href="#" class="article__tag">Семейные традиции</a>
+              <a href="#" class="article__tag tag">Семейные традиции</a>
               <a href="#" class="article__hash-tag">#Мудрость</a>
               <a href="#" class="article__hash-tag">#Семейные_ценности</a>
               <h3 class="article__title heading-tertiary">Почему предки знают ответы на все наши вопросы?</h3>
               <p class="article__paragraph paragraph">
-                  В семье каждого из нас наступает такой момент, когда мы не знаем, как правильно поступить в той или иной ситуации. Нам часто кажется ...
+                В семье каждого из нас наступает такой момент, когда мы не знаем, как правильно поступить в той или иной ситуации. Нам часто
+                кажется ...
               </p>
               <a href="#" class="article__author italic">Михаил Иванов</a>
               <p class="article__about-author paragraph italic">Педагог, психолог</p>
@@ -236,12 +240,13 @@
 
             <article class="article grid-item" data-id="3">
               <img src="../img/article3.jpg" alt="фото3" class="article__img">
-              <a href="#" class="article__tag">Дети</a>
+              <a href="#" class="article__tag tag">Дети</a>
               <a href="#" class="article__hash-tag">#трудолюбие</a>
               <a href="#" class="article__hash-tag">#воспитание</a>
               <h3 class="article__title heading-tertiary">Как формируется трудолюбие у детей</h3>
               <p class="article__paragraph paragraph">
-                  Люблю наблюдать за играми детей.  Игра говорит обо всем, что для ребенка сейчас важно. Взрослый может присоединиться  к игре и ...
+                Люблю наблюдать за играми детей. Игра говорит обо всем, что для ребенка сейчас важно. Взрослый может присоединиться к игре
+                и ...
               </p>
               <a href="#" class="article__author italic">Елена Будаева</a>
               <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
@@ -250,12 +255,12 @@
 
             <article class="article grid-item" data-id="4">
               <img src="../img/article4.jpg" alt="фото4" class="article__img">
-              <a href="#" class="article__tag">Бизнес</a>
+              <a href="#" class="article__tag tag">Бизнес</a>
               <a href="#" class="article__hash-tag">#мама_в_декрете</a>
               <h3 class="article__title heading-tertiary">Как стать успешной не выходя из декрета?</h3>
               <p class="article__paragraph paragraph">
-                  Вопрос, который часто задают родители маленьких детей.
-                  Оказывается, учить детей можно легко, просто и интересно, просто с ними играя. 
+                Вопрос, который часто задают родители маленьких детей. Оказывается, учить детей можно легко, просто и интересно, просто с
+                ними играя.
               </p>
               <a href="#" class="article__author italic">Светлана Антонова</a>
               <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
@@ -264,12 +269,12 @@
 
             <article class="article grid-item" data-id="5" data-popularity-index="80">
               <img src="../img/article5.jpg" alt="фото5" class="article__img">
-              <a href="#" class="article__tag">Праздники</a>
+              <a href="#" class="article__tag tag">Праздники</a>
               <a href="#" class="article__hash-tag">#день_рождения</a>
               <h3 class="article__title heading-tertiary">Детский день рождения. Довериться профессионалу или своими силами?</h3>
               <p class="article__paragraph paragraph">
-                  Дети любят сказки. Слушать, сочинять, рассказывать.  Сказка  несет информацию о том, что спрятано «за семью замками и семью печатями», 
-                  в самой глубине души.
+                Дети любят сказки. Слушать, сочинять, рассказывать. Сказка несет информацию о том, что спрятано «за семью замками и семью
+                печатями», в самой глубине души.
               </p>
               <a href="#" class="article__author italic">Катя Кещян</a>
               <p class="article__about-author paragraph italic">Профессионал, организатор</p>
@@ -278,11 +283,12 @@
 
             <article class="article grid-item" data-id="6">
               <img src="../img/article6.jpg" alt="фото6" class="article__img">
-              <a href="#" class="article__tag">Беременность</a>
+              <a href="#" class="article__tag tag">Беременность</a>
               <a href="#" class="article__hash-tag">#6месяцев</a>
               <h3 class="article__title heading-tertiary">В ожидании чуда. Правильный настрой</h3>
               <p class="article__paragraph paragraph">
-                Люблю наблюдать за играми детей.  Игра говорит обо всем, что для ребенка сейчас важно. Взрослый может присоединиться  к игре и направлять ее в развивающем русле.
+                Люблю наблюдать за играми детей. Игра говорит обо всем, что для ребенка сейчас важно. Взрослый может присоединиться к игре
+                и направлять ее в развивающем русле.
               </p>
               <a href="#" class="article__author italic">Светлана Антонова</a>
               <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
@@ -291,12 +297,12 @@
 
             <article class="article grid-item" data-id="7">
               <img src="../img/article7.jpg" alt="фото7" class="article__img">
-              <a href="#" class="article__tag">Отношения</a>
+              <a href="#" class="article__tag tag">Отношения</a>
               <a href="#" class="article__hash-tag">#мужчина_и_женщина</a>
               <h3 class="article__title heading-tertiary">Мужской и женский взгляд на одни и те же события.</h3>
               <p class="article__paragraph paragraph">
-                Вопрос, который часто задают родители маленьких детей.
-                Оказывается, учить детей можно легко, просто и интересно, просто с ними играя. 
+                Вопрос, который часто задают родители маленьких детей. Оказывается, учить детей можно легко, просто и интересно, просто с
+                ними играя.
               </p>
               <a href="#" class="article__author italic">Игорь Алексеев</a>
               <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
@@ -304,27 +310,29 @@
             </article>
 
             <article class="article grid-item" data-popularity-index="100" data-id="8">
-                <img src="../img/article3.jpg" alt="фото3" class="article__img">
-                <a href="#" class="article__tag">Дети</a>
-                <a href="#" class="article__hash-tag">#трудолюбие</a>
-                <a href="#" class="article__hash-tag">#воспитание</a>
-                <h3 class="article__title heading-tertiary">Как формируется трудолюбие у детей</h3>
-                <p class="article__paragraph paragraph">
-                    Люблю наблюдать за играми детей.  Игра говорит обо всем, что для ребенка сейчас важно. Взрослый может присоединиться  к игре и ...
-                </p>
-                <a href="#" class="article__author italic">Елена Будаева</a>
-                <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
-                <time datetime="11-12-2017" class="article__time italic">11 декабря 2017</time>
+              <img src="../img/article3.jpg" alt="фото3" class="article__img">
+              <a href="#" class="article__tag tag">Дети</a>
+              <a href="#" class="article__hash-tag">#трудолюбие</a>
+              <a href="#" class="article__hash-tag">#воспитание</a>
+              <h3 class="article__title heading-tertiary">Как формируется трудолюбие у детей</h3>
+              <p class="article__paragraph paragraph">
+                Люблю наблюдать за играми детей. Игра говорит обо всем, что для ребенка сейчас важно. Взрослый может присоединиться к игре
+                и ...
+              </p>
+              <a href="#" class="article__author italic">Елена Будаева</a>
+              <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
+              <time datetime="11-12-2017" class="article__time italic">11 декабря 2017</time>
             </article>
 
             <article class="article grid-item" data-id="9">
               <img src="../img/article8.jpg" alt="фото8" class="article__img">
-              <a href="#" class="article__tag">Личностное развитие</a>
+              <a href="#" class="article__tag tag">Личностное развитие</a>
               <a href="#" class="article__hash-tag">#лекгоменяться</a>
               <a href="#" class="article__hash-tag">#достижениецелей</a>
               <h3 class="article__title heading-tertiary">Структура развития личности</h3>
               <p class="article__paragraph paragraph">
-                  Разберём одну из теорий устройства личности про развития. Когда ребёнок рождается, он оказывается в неком окружении. Это люди, вещи, звуки, атмосфера. Первый уровень, который Роберт Дилтс так и назвал- ОКРУЖЕНИЕ.
+                Разберём одну из теорий устройства личности про развития. Когда ребёнок рождается, он оказывается в неком окружении. Это
+                люди, вещи, звуки, атмосфера. Первый уровень, который Роберт Дилтс так и назвал- ОКРУЖЕНИЕ.
               </p>
               <a href="#" class="article__author italic">Светлана Антонова</a>
               <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
@@ -332,61 +340,430 @@
             </article>
 
             <article class="article grid-item" data-id="10">
-                <img src="../img/article1.jpg" alt="фото1" class="article__img">
-                <a href="#" class="article__tag">Дети</a>
-                <a href="#" class="article__hash-tag">#обучение</a>
-                <a href="#" class="article__hash-tag">#игра</a>
-                <h3 class="article__title heading-tertiary">Учить – играя, или играть — обучая?</h3>
-                <p class="article__paragraph paragraph">
-                  Вопрос, который часто задают родители маленьких детей. Оказывается, учить детей можно легко, просто и интересно, просто с
-                  ними играя.
-                </p>
-                <a href="#" class="article__author italic">Светлана Антонова</a>
-                <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
-                <time datetime="23-12-2017" class="article__time italic">23 декабря 2017</time>
-              </article>
-  
-            <article class="article grid-item" data-popularity-index="90" data-id="11">
-                <img src="../img/article2.jpg" alt="фото2" class="article__img">
-                <a href="#" class="article__tag">Семейные традиции</a>
-                <a href="#" class="article__hash-tag">#Мудрость</a>
-                <a href="#" class="article__hash-tag">#Семейные_ценности</a>
-                <h3 class="article__title heading-tertiary">Почему предки знают ответы на все наши вопросы?</h3>
-                <p class="article__paragraph paragraph">
-                    В семье каждого из нас наступает такой момент, когда мы не знаем, как правильно поступить в той или иной ситуации. Нам часто кажется ...
-                </p>
-                <a href="#" class="article__author italic">Михаил Иванов</a>
-                <p class="article__about-author paragraph italic">Педагог, психолог</p>
-                <time datetime="21-12-2017" class="article__time italic">21 декабря 2017</time>
+              <img src="../img/article1.jpg" alt="фото1" class="article__img">
+              <a href="#" class="article__tag tag">Дети</a>
+              <a href="#" class="article__hash-tag">#обучение</a>
+              <a href="#" class="article__hash-tag">#игра</a>
+              <h3 class="article__title heading-tertiary">Учить – играя, или играть — обучая?</h3>
+              <p class="article__paragraph paragraph">
+                Вопрос, который часто задают родители маленьких детей. Оказывается, учить детей можно легко, просто и интересно, просто с
+                ними играя.
+              </p>
+              <a href="#" class="article__author italic">Светлана Антонова</a>
+              <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
+              <time datetime="23-12-2017" class="article__time italic">23 декабря 2017</time>
             </article>
-  
+
+            <article class="article grid-item" data-popularity-index="90" data-id="11">
+              <img src="../img/article2.jpg" alt="фото2" class="article__img">
+              <a href="#" class="article__tag tag">Семейные традиции</a>
+              <a href="#" class="article__hash-tag">#Мудрость</a>
+              <a href="#" class="article__hash-tag">#Семейные_ценности</a>
+              <h3 class="article__title heading-tertiary">Почему предки знают ответы на все наши вопросы?</h3>
+              <p class="article__paragraph paragraph">
+                В семье каждого из нас наступает такой момент, когда мы не знаем, как правильно поступить в той или иной ситуации. Нам часто
+                кажется ...
+              </p>
+              <a href="#" class="article__author italic">Михаил Иванов</a>
+              <p class="article__about-author paragraph italic">Педагог, психолог</p>
+              <time datetime="21-12-2017" class="article__time italic">21 декабря 2017</time>
+            </article>
+
             <article class="article grid-item" data-id="12">
-                <img src="../img/article3.jpg" alt="фото3" class="article__img">
-                <a href="#" class="article__tag">Дети</a>
-                <a href="#" class="article__hash-tag">#трудолюбие</a>
-                <a href="#" class="article__hash-tag">#воспитание</a>
-                <h3 class="article__title heading-tertiary">Как формируется трудолюбие у детей</h3>
-                <p class="article__paragraph paragraph">
-                    Люблю наблюдать за играми детей.  Игра говорит обо всем, что для ребенка сейчас важно. Взрослый может присоединиться  к игре и ...
-                </p>
-                <a href="#" class="article__author italic">Елена Будаева</a>
-                <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
-                <time datetime="19-12-2017" class="article__time italic">19 декабря 2017</time>
+              <img src="../img/article3.jpg" alt="фото3" class="article__img">
+              <a href="#" class="article__tag tag">Дети</a>
+              <a href="#" class="article__hash-tag">#трудолюбие</a>
+              <a href="#" class="article__hash-tag">#воспитание</a>
+              <h3 class="article__title heading-tertiary">Как формируется трудолюбие у детей</h3>
+              <p class="article__paragraph paragraph">
+                Люблю наблюдать за играми детей. Игра говорит обо всем, что для ребенка сейчас важно. Взрослый может присоединиться к игре
+                и ...
+              </p>
+              <a href="#" class="article__author italic">Елена Будаева</a>
+              <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
+              <time datetime="19-12-2017" class="article__time italic">19 декабря 2017</time>
             </article>
 
           </div>
 
+          <a href="#" class="button button--articles">Загрузить еще +</a>
+
+        </section>
+
+        <section class="aside">
+          <div class="events">
+            <h3 class="events__title heading-tertiary heading-tertiary--aside">Событие</h3>
+            <img src="../img/event.jpg" alt="фото события" class="events__img">
+            <div class="events__content">
+              <a href="#" class="events__tag tag">Личностное развитие</a>
+              <span class="events__date">2 января г. Москва</span>
+              <p class="paragraph">Тренинг, 400 &#8399</p>
+              <p class="events__paragraph">Личностное развитие.</p>
+              <p class="events__paragraph">Пусть к успеху</p>
+              <a href="#" class="learn-more">Все события »</a>
+            </div>
+          </div>
+
+          <div class="forum">
+            <h3 class="forum__title heading-tertiary heading-tertiary--aside">
+              Форум
+            </h3>
+            <div class="forum__inner">
+              <a href="#" class="forum__topic paragraph">Как вы готовитесь к
+                <br> Новому году?</a>
+              <div class="forum__details-group">
+                <time class="forum__time">17:58</time>
+                <svg class="forum__comments-icon">
+                  <use xlink:href="img/sprite.svg#icon-bubble"></use>
+                </svg>
+                <div class="forum__comments">29</div>
+              </div>
+              <a href="#" class="forum__topic paragraph">Куда сходить на Новый Год
+                <br> в 2018 году с ребенком?</a>
+              <div class="forum__details-group">
+                <time class="forum__time">16:51</time>
+                <svg class="forum__comments-icon">
+                  <use xlink:href="img/sprite.svg#icon-bubble"></use>
+                </svg>
+                <div class="forum__comments">37</div>
+              </div>
+              <a href="#" class="forum__topic paragraph">Как вы готовитесь к
+                <br> Новому году?</a>
+              <div class="forum__details-group">
+                <time class="forum__time">17:58</time>
+                <svg class="forum__comments-icon">
+                  <use xlink:href="img/sprite.svg#icon-bubble"></use>
+                </svg>
+                <div class="forum__comments">29</div>
+              </div>
+              <a href="#" class="forum__topic paragraph">Куда сходить на Новый Год
+                <br> в 2018 году с ребенком?</a>
+              <div class="forum__details-group">
+                <time class="forum__time">16:51</time>
+                <svg class="forum__comments-icon">
+                  <use xlink:href="img/sprite.svg#icon-bubble"></use>
+                </svg>
+                <div class="forum__comments">37</div>
+              </div>
+              <a href="#" class="forum__topic paragraph">Как вы готовитесь к
+                <br> Новому году?</a>
+              <div class="forum__details-group">
+                <time class="forum__time">17:58</time>
+                <svg class="forum__comments-icon">
+                  <use xlink:href="img/sprite.svg#icon-bubble"></use>
+                </svg>
+                <div class="forum__comments">29</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="banner">
+            <div class="banner__inner">
+              <a href="#" class="banner__link">
+                <img src="../img/banner1.jpg" alt="Рекламный баннер" class="banner__img">
+              </a>
+              <a href="#" class="banner__link">
+                <img src="../img/banner2.jpg" alt="Рекламный баннер" class="banner__img">
+              </a>
+            </div>
+          </div>
+
+          <article class="article">
+            <img src="../img/article7.jpg" alt="фото7" class="article__img">
+            <a href="#" class="article__tag">Отношения</a>
+            <a href="#" class="article__hash-tag">#мужчина_и_женщина</a>
+            <h3 class="article__title heading-tertiary">Мужской и женский взгляд на одни и те же события.</h3>
+            <p class="article__paragraph paragraph">
+              Вопрос, который часто задают родители маленьких детей. Оказывается, учить детей можно легко, просто и интересно, просто с
+              ними играя.
+            </p>
+            <a href="#" class="article__author italic">Игорь Алексеев</a>
+            <p class="article__about-author paragraph italic">Педагог, психолог, лектор</p>
+            <time datetime="12-12-2017" class="article__time italic">12 декабря 2017</time>
+          </article>
+
+        </section>
+
+      </div>
+
+      <section class="topics">
+        <h2 class="topics__title heading-secondary">
+          <div class="underline-thick">
+            <span></span>
+          </div>
+          Темы
+        </h2>
+
+        <div class="topics__inner">
+
+          <div class="topic topic--topic1">
+            <img src="../img/topic1.jpg" alt="фото темы 1" class="topic__img">
+            <div class="topic__caption">
+              <h3 class="topic__title heading-tertiary">Личностное развитие</h3>
+              <a href="#" class="topic__articles-link">13 статей</a>
+              <p class="paragraph">Здесь есть все, что касается открытия и ведения своего бизнеса. Ответы на самые распространенные вопросы и даже
+                больше.
+              </p>
+            </div>
+          </div>
+
+          <div class="topic topic--topic2">
+            <img src="../img/topic2.jpg" alt="фото темы 2" class="topic__img">
+            <div class="topic__caption">
+              <h3 class="topic__title heading-tertiary">Праздники</h3>
+              <a href="#" class="topic__articles-link">48 статей</a>
+              <p class="paragraph">Здесь есть все, что касается открытия и ведения своего бизнеса. Ответы на самые распространенные вопросы и даже
+                больше.
+              </p>
+            </div>
+          </div>
+
+          <div class="topic topic--topic3">
+            <img src="../img/topic3.jpg" alt="фото темы 3" class="topic__img">
+            <div class="topic__caption">
+              <h3 class="topic__title heading-tertiary">Семейные традиции</h3>
+              <a href="#" class="topic__articles-link">26 статей</a>
+              <p class="paragraph">Здесь есть все, что касается открытия и ведения своего бизнеса. Ответы на самые распространенные вопросы и даже
+                больше.
+              </p>
+            </div>
+          </div>
+
+          <div class="topic topic--topic4">
+            <img src="../img/topic4.jpg" alt="фото темы 4" class="topic__img">
+            <div class="topic__caption">
+              <h3 class="topic__title heading-tertiary">Дети</h3>
+              <a href="#" class="topic__articles-link">325 статей</a>
+              <p class="paragraph">Здесь есть все, что касается открытия и ведения своего бизнеса. Ответы на самые распространенные вопросы и даже
+                больше.
+              </p>
+            </div>
+          </div>
+
+          <div class="topic topic--topic5">
+            <img src="../img/topic5.jpg" alt="фото темы 5" class="topic__img">
+            <div class="topic__caption">
+              <h3 class="topic__title heading-tertiary">Бизнес</h3>
+              <a href="#" class="topic__articles-link">48 статей</a>
+              <p class="paragraph">Здесь есть все, что касается открытия и ведения своего бизнеса. Ответы на самые распространенные вопросы и даже
+                больше.
+              </p>
+            </div>
+          </div>
+
+          <div class="topic topic--topic6">
+            <img src="../img/topic6.jpg" alt="фото темы 6" class="topic__img">
+            <div class="topic__caption">
+              <h3 class="topic__title heading-tertiary">Отношения</h3>
+              <a href="#" class="topic__articles-link">32 статьи</a>
+              <p class="paragraph">Здесь есть все, что касается открытия и ведения своего бизнеса. Ответы на самые распространенные вопросы и даже
+                больше.
+              </p>
+            </div>
+          </div>
+
+          <div class="topic topic--topic7">
+            <img src="../img/topic7.jpg" alt="фото темы 7" class="topic__img">
+            <div class="topic__caption">
+              <h3 class="topic__title heading-tertiary">Беременность</h3>
+              <a href="#" class="topic__articles-link">14 статей</a>
+              <p class="paragraph">Здесь есть все, что касается открытия и ведения своего бизнеса. Ответы на самые распространенные вопросы и даже
+                больше.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <section class="register">
+      <div class="register__inner container">
+        <img src="../img/register-logo.png" alt="логотип" class="register__logo">
+        <div class="register__text">
+          <p class="register__paragraph register__paragraph--upper">
+            Зарегистрируйтесь на портале «Уткин Дом»
+          </p>
+          <p class="register__paragraph register__paragraph--lower">
+            И смотрите
+            <span class="uppercase">бесплатные видео</span> на странице
+            <a href="#" class="register__events-link">«События»</a>
+          </p>
+        </div>
+        <a href="#" class="button button--register">Регистрация</a>
+      </div>
+    </section>
+
+    <section class="experts">
+      <div class="experts__inner">
+        <div class="experts__header">
+          <h2 class="experts__title heading-secondary">
+            <div class="underline-thick">
+              <span></span>
+            </div>
+            Эксперты
+          </h2>
+          <a href="#" class="button button--consult">Консультация</a>
         </div>
 
-      </section>
+        <div class="expert-wrapper">
+          <div class="expert active" data-id="1">
+            <img src="../img/expert1.png" alt="фото эксперта" class="expert__img">
+            <div class="expert__content">
+              <h3 class="expert__title heading-tertiary">Елена Будаева</h3>
+              <p class="expert__job">Психолог, коуч, психотерапевт, гипнотерапевт</p>
+              <p class="expert__tags tag">Дети, Отношения, Личностное развитие</p>
+              <hr>
+              <p class="expert__greet">Доброго времени суток!</p>
+              <p class="paragraph">Меня зовут Елена Будаева, я коуч и психоаналитический терапевт. Мне бы очень хотелось в этом проекте донести
+              до вас то, как устроена наша личность. Научиться больше принимать себя. Понимать. Научиться принимать супруга
+              и детей ...</p>
+            </div>
+          </div>
+        </div>
+        <div class="expert-wrapper">
+          <div class="expert" data-id="2">
+            <img src="../img/expert2.png" alt="фото эксперта" class="expert__img">
+            <div class="expert__content">
+              <h3 class="expert__title heading-tertiary">Вячеслав Леонов</h3>
+              <p class="expert__job">Психолог, коуч, психотерапевт, гипнотерапевт</p>
+              <p class="expert__tags tag">Дети, Отношения, Личностное развитие</p>
+              <hr>
+              <p class="expert__greet">Доброго времени суток!</p>
+              <p class="paragraph">Меня зовут Вячеслав Леонов, я коуч и психоаналитический терапевт. Мне бы очень хотелось в этом проекте донести
+                до вас то, как устроена наша личность. Научиться больше принимать себя. Понимать. Научиться принимать супруга
+                и детей ...</p>
+            </div>
+          </div>
+        </div>
+        <div class="experts__thumbs">
+          <div class="thumb">
+            <img src="../img/expert1.png" alt="фото эксперта" class="thumb__img">
+            <p class="thumb__title italic">Елена Васильевна Иванова</p>
+            <p class="thumb__job italic">Психолог, лектор</p>
+          </div>
+          <div class="thumb">
+            <img src="../img/expert2.png" alt="фото эксперта" class="thumb__img">
+            <p class="thumb__title italic">Вячеслав Леонов</p>
+            <p class="thumb__job italic">Психолог, лектор</p>
+          </div>
+          <div class="thumb">
+            <img src="../img/expert1.png" alt="фото эксперта" class="thumb__img">
+            <p class="thumb__title italic">Елена Васильевна Иванова</p>
+            <p class="thumb__job italic">Психолог, лектор</p>
+          </div>
+          <div class="thumb">
+            <img src="../img/expert2.png" alt="фото эксперта" class="thumb__img">
+            <p class="thumb__title italic">Вячеслав Леонов</p>
+            <p class="thumb__job italic">Психолог, лектор</p>
+          </div>
 
-      <section class="aside">
+          <a href="#" class="button button--experts">Все эксперты »</a>
 
-      </section>
+        </div>
+      </div>
+    </section>
 
-    </div>
+    <footer class="footer">
+      <div class="footer__header">
+        
+      </div>
+      <div class="container">
+        <nav class="footer-menu">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">статьи</a>
+              <ul class="footer-menu__sub-menu">
+                <li class="footer-menu__sub-menu-item"><a href="#" class="footer-menu__sub-menu-link">Последние</a></li>
+                <li class="footer-menu__sub-menu-item"><a href="#" class="footer-menu__sub-menu-link">Темы</a></li>
+              </ul>
+            </li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Эксперты</a>
+              <ul class="footer-menu__sub-menu">
+                <li class="footer-menu__sub-menu-item"><a href="#" class="footer-menu__sub-menu-link">Наши Эксперты</a></li>
+                <li class="footer-menu__sub-menu-item"><a href="#" class="footer-menu__sub-menu-link">Консультация</a></li>
+              </ul>
+            </li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">События</a>
+              <ul class="footer-menu__sub-menu">
+                <li class="footer-menu__sub-menu-item"><a href="#" class="footer-menu__sub-menu-link">Ближайшие</a></li>
+                <li class="footer-menu__sub-menu-item"><a href="#" class="footer-menu__sub-menu-link">Прошедшие</a></li>
+              </ul>
+            </li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">О Проекте</a>
+              <ul class="footer-menu__sub-menu">
+                <li class="footer-menu__sub-menu-item"><a href="#" class="footer-menu__sub-menu-link">О Проекте</a></li>
+                <li class="footer-menu__sub-menu-item"><a href="#" class="footer-menu__sub-menu-link">Политика конфедициальности</a></li>
+              </ul>
+            </li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Форум</a>
+              <ul class="footer-menu__sub-menu">
+                <li class="footer-menu__sub-menu-item"><a href="#" class="footer-menu__sub-menu-link">Последние</a></li>
+                <li class="footer-menu__sub-menu-item"><a href="#" class="footer-menu__sub-menu-link">Темы</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="footer__content">
+          <div class="footer__left-section">
+            <p class="paragraph paragraph--footer">
+              Вопросы и пожелания <a href="mailto:help@utkin-dom.com" class="footer__mail-link">help@utkin-dom.com</a>, размещение рекламы <a href="mailto:adv@utkin-dom.com" class="footer__mail-link">adv@utkin-dom.com</a>.
+            </p>
+            <p class="paragraph paragraph--footer">
+              Любое использование материалов utkin_dom.ru возможно только с предварительного письменного согласия Администрации сайта.Администрация сайта не несет ответственности за содержание сообщений, публикуемых в форумах, доске объявлений, в отзывах и комментариях к материалам.
+            </p>
 
-  </main>
+            <ul class="footer__socials">
+              <li class="footer__socials-item"><a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a></li>
+              <li class="footer__socials-item"><a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a></li>
+              <li class="footer__socials-item"><a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a></li>
+              <li class="footer__socials-item"><a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a></li>
+              <li class="footer__socials-item"><a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a></li>
+              <li class="footer__socials-item"><a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#icon-odnoklassniki"></use>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+          <div class="footer__right-section">
+            <h3 class="heading-tertiary">Подпишись на «Уткин Дом»</h3>
+            <p class="paragraph paragraph--footer">
+              Раз в неделю мы будем Вам присылать самые важные материалы, коротко и без спама.
+            </p>
+            <form action="" class="footer__form" id="subscribe">
+              <input type="email" class="footer__input">
+              <button type="submit" form="subscribe"></button>
+            </form>
+            <p class="paragraph paragraph--footer">
+              Нажимая на кнопку, вы даете согласие на обработку персональных данных 
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

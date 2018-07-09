@@ -73,4 +73,14 @@ $(function(){
     }
   });
 
+  // EXPERTS
+
+  $('.experts__thumbs').on('click', '.thumb', function(){
+    let suffix = $(this).find('img').attr('src').match(/\d+/);
+    
+    $('.expert').removeClass('active');
+    $('.expert[data-id="'+suffix+'"]').css('opacity', 0).toggleClass('active').animate({'opacity': 1}, 1000);
+    console.log('clicked');
+  });
+
 });

@@ -81,6 +81,11 @@
 .articles
   width: 87rem
   margin-right: 3rem
+  margin-bottom: 18rem
+
+  &__inner
+    width: 87rem
+    margin-bottom: 3rem
 
   &__heading
     display: flex
@@ -91,7 +96,6 @@
   &__title-wrapper
     width: 57rem
     margin-right: 3rem
-    line-height: 1.5rem
   
   &__title
     position: relative
@@ -101,30 +105,45 @@
     display: flex
     justify-content: space-between
     width: 27rem
-
-  &__filter-link
-    font-size: 1.8rem
-
-    &--checked
-      color: #b87e4b
-      padding-left: 2.5rem
-      margin-right: 5rem
-      position: relative
-
-    &--checked::before
-      content: "";
-      position: absolute
-      top: 2px
-      left: 0
-      display: block;
-      width: 8px;
-      height: 16px;
-      border: solid #b87e4b
-      border-width: 0 2px 2px 0;
-      transform: rotate(45deg);
   
-  &__inner
-    width: 87rem
+  &__checkbox-group
+    flex: 0
+
+  &__checkbox
+    opacity: 0
+
+  &__filter-button
+    font-size: 1.8rem
+    position: relative
+    display: inline-block
+    padding-left: 3rem
+    cursor: pointer
+    color: #000000
+    transition: color .2s
+
+    &:hover,
+      color: #b87e4b
+
+  &__filter-button::before
+    content: ""
+    position: absolute
+    top: 2px
+    left: 0
+    display: inline-block
+    width: 8px
+    height: 16px
+    border: solid #b87e4b
+    border-width: 0 2px 2px 0
+    transform: rotate(45deg)
+
+  &__checkbox + .articles__filter-button::before
+    content: none
+
+  &__checkbox:checked + .articles__filter-button::before
+    content: ""
+
+  &__checkbox:checked + .articles__filter-button
+    color: #b87e4b
 
 // ****************
 // ARTICLE
@@ -139,14 +158,8 @@
     display: block
     margin-bottom: 2rem
 
-  &__tag:link,
-  &__tag:visited
-    font-weight: bold
-    font-size: 1.6rem
-    text-transform: uppercase
-    color: #b87e4b
+  &__tag
     position: relative
-    display: block
     margin-bottom: 1.5rem
 
     &::after
@@ -183,3 +196,320 @@
     font-size: 1.6rem
     margin-top: 1rem
 
+// ****************
+// ASIDE
+// ****************
+
+.aside
+  width: 27rem
+  padding-top: 11rem
+
+.events
+  padding-left: 2rem
+
+  &__title
+    margin-bottom: 3rem
+
+  &__img
+    width: 100%
+    display: block
+
+  &__content
+    padding: 2rem 1rem
+    background-color: #fff
+
+  &__tag
+    margin-bottom: 1.5rem
+
+  &__date
+    font-size: 1.6rem
+    color: #b87e4b
+    display: block
+    margin-bottom: 2rem
+
+  &__paragraph
+    display: block
+    font-family: 'PTSerif', sans-serif
+    font-size: 1.8rem
+    font-weight: bold
+    margin-top: 1rem
+
+    &:last-of-type
+      margin-bottom: 3rem
+
+.forum
+  padding-left: 2rem
+  margin-top: 6rem
+  margin-bottom: 7rem
+  position: relative
+
+  &::after
+      content: ""
+      position: absolute
+      bottom: 0
+      width: 23rem
+      height: 4rem
+      background-color: #fff9f6
+      opacity: .5
+
+  &__inner
+    overflow-y: auto
+    height: 45rem
+
+  &__title
+    margin-bottom: 3rem
+
+  &__topic:link,
+  &__topic:visited
+    display: block
+    margin-bottom: 1rem
+  
+  &__topic:hover,
+  &__topic:active
+    text-decoration: underline
+    color: #b87e4b
+  
+  &__details-group
+    display: flex
+    justify-content: space-between
+    font-size: 1.4rem
+    color: #939393
+    margin-bottom: 3rem
+  
+  &__comments-icon
+    width: 2rem
+    height: 2rem
+    fill: #939393
+    margin-left: auto
+    margin-right: 1rem
+
+  &__comments
+    margin-right: 2rem
+    
+.banner
+  padding-left: 2rem
+  margin-bottom: 6rem
+
+  &__link
+    display: block
+
+  &__link:first-of-type
+    margin-bottom: 4rem
+
+  &__img
+    display: block
+
+// ****************
+// TOPICS
+// ****************
+
+.topics
+
+  &__title
+    position: relative
+    display: table
+    margin: 0 auto 6rem auto
+    
+  &__inner
+    height: 112rem
+    width: 100%
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    
+.topic
+  width: 37rem
+  position: relative
+  border-bottom: 2px solid #d8a06f
+  overflow: hidden
+  margin-bottom: 3rem
+  margin-right: 3rem
+
+  &:hover .topic__caption
+    bottom: 0
+
+  &__caption
+    width: 100%
+    height: 100%
+    position: absolute
+    border-top: 2px solid #d8a06f
+    padding: 1rem 2.5rem
+    background-color: rgba(253, 236, 237, .9)
+    transition: all .5s 
+
+  &__title
+    text-transform: uppercase
+    display: block
+    margin-bottom: 1rem
+
+  &__articles-link:link,
+  &__articles-link:visited
+    font-family: 'PTSerif', sans-serif
+    font-size: 1.6rem
+    color: #b87e4b
+    text-decoration: underline
+    display: inline-block
+    margin-bottom: 4rem
+
+  &--topic6,
+  &--topic7
+    margin-right: 0
+
+  &--topic1,
+  &--topic2,
+  &--topic4,
+  &--topic6,
+  &--topic7
+    height: 42rem
+
+    .topic__caption
+      bottom: -33.5rem
+  
+  &--topic3
+    height: 27rem
+
+    .topic__caption
+      bottom: -18.5rem
+
+  &--topic5
+    height: 33rem
+
+    .topic__caption
+      bottom: -24.5rem
+  
+// ****************
+// REGISTER
+// ****************
+
+.register
+  height: 12rem
+  background-color: #ffe2e4
+  margin-top: 15rem
+  margin-bottom: 18rem
+  
+  &__inner
+    position: relative
+    display: flex
+    align-items: center
+    height: 100%
+    padding-right: 5rem
+
+  &__logo
+    display: block
+    width: 18rem
+    height: 19.1rem
+    position: absolute
+    top: -4rem
+    left: 0
+
+  &__text
+    margin-left: 21rem
+    flex: 1
+
+  &__paragraph
+    font-family: 'PTSerif', sans-serif
+    font-weight: bold
+    font-size: 1.8rem
+    letter-spacing: 1.5px
+
+    &--upper
+      text-transform: uppercase
+      color: #b87e4b
+      margin-bottom: 2rem
+
+    &--lower
+      color: #000000
+    
+  &__events-link:link,
+  &__events-link:visited
+    color: #b87e4b
+    text-decoration: underline
+
+// ****************
+// EXPERTS
+// ****************
+
+.experts
+  margin-bottom: 17rem
+
+  &__inner
+    width: 107rem
+    margin: 0 auto
+
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-bottom: 6rem
+
+  &__title
+    position: relative
+    display: inline-block
+  
+  &__thumbs
+    padding-left: 3.5rem
+    display: flex
+
+.expert-wrapper
+  background-color: #fbedee
+
+.expert
+  padding: 0 2rem
+  margin-bottom: 6rem
+  display: none
+
+  &.active
+    display: flex
+
+  &__img
+    width: 27rem
+    height: 27rem
+    margin: 6rem 3rem
+    display: block
+    flex: 1 
+
+  &__content
+    padding: 6rem 5rem 4rem 5rem
+
+  &__title
+    text-transform: uppercase
+    letter-spacing: 2px
+    margin-bottom: .5rem
+    font-size: 2.6rem
+
+  &__job
+    font-family: 'PTSerif'
+    font-size: 1.8rem
+    letter-spacing: .5px
+    margin-bottom: 2rem
+
+  &__tags
+    margin-bottom: 2rem
+
+  & hr 
+    background-color: #e4cab5
+    height: 2px
+    border: none
+    margin-bottom: 2.5rem
+
+  &__greet
+    font-family: 'PTSerif', sans-serif
+    font-size: 2.2rem
+    margin-bottom: 2rem
+
+.thumb
+  margin-right: 3rem
+  width: 17rem
+  text-align: center
+
+  &__img
+    width: 10rem
+    height: 10rem
+    margin-bottom: 1rem
+  
+  &__title
+    font-size: 1.8rem
+    margin-bottom: 1rem
+
+  &__job
+    font-size: 1.6rem
